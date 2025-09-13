@@ -2,23 +2,28 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 p{
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .contactotext {
   background-color: pink;
+  flex-wrap: wrap;
 }
 body.inicio {
   height: 100%;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  flex-wrap: wrap;
 }
 body {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 main {
@@ -32,6 +37,7 @@ main {
   flex-wrap: wrap;
   gap: 20px;
   padding: 40px;
+  flex-wrap: wrap;
 
 }
 li {
@@ -42,12 +48,14 @@ li {
   position: relative;
   padding-bottom: 3px;
   display: inline-block;
+  flex-wrap: wrap;
   transition: transform 0.1 ease ;
 }
 li::before
 {
   content: "";
   color: aqua;
+  flex-wrap: wrap;
 }
 li a::after {
   content: "";
@@ -58,13 +66,16 @@ li a::after {
   height: 2px;
   background-color: blueviolet;
   transition: width 0.3s ease;
+  flex-wrap: wrap;
 }
 li a:hover:after {
 width: 100%;
+flex-wrap: wrap;
 }
 li a:active {
   transform: scale(0.9);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5rem);
+  flex-wrap: wrap;
 }
 .navbar {
     color: black;
@@ -78,6 +89,7 @@ li a:active {
   background-color: rgb(175, 175, 60);
   padding: 0.9rem 1.2rem;
   position: relative;
+  flex-wrap: wrap;
 }
 
 
@@ -93,6 +105,7 @@ nav.navbar::after {
     rgba(255, 255, 255, 0.4),
     rgba(255, 255, 255, 0)
   );
+  flex-wrap: wrap;
 }
 .navbar__inner {
   max-width: 1000px;
@@ -101,6 +114,7 @@ nav.navbar::after {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .navbar__brand {
@@ -108,6 +122,7 @@ nav.navbar::after {
   align-items: center;
   gap: 0.5rem;
   position: relative;
+  flex-wrap: wrap;
 }
 .navbar__brand::before {
   color: black;
@@ -121,6 +136,7 @@ nav.navbar::after {
     rgba(255, 255, 255, 0.25)
   );
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25) inset;
+  flex-wrap: wrap;
 }
 
 .navbar__links {
@@ -129,6 +145,7 @@ nav.navbar::after {
   gap: 1rem;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 .team-container {
   display: flex;
@@ -138,6 +155,7 @@ nav.navbar::after {
  align-items: center;
  flex-wrap: wrap; 
  justify-content: center;
+ flex-wrap: wrap;
 }
 
 .team-card {
@@ -155,30 +173,36 @@ nav.navbar::after {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .team-card img {
   max-width: 100%;
   height: auto;
   border-radius: 10px 10px 0 0;
+  flex-wrap: wrap;
 }
 .team-card:hover {
   transform: translateY(-10px) scale(1.03);
   box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  flex-wrap: wrap;
 }
 footer {
   background-color: pink;
   padding: 130px;
   text-align: start;
+  flex-wrap: wrap;
   
 }
 
 
 body.equipotext {
   background-color: pink ;
+  flex-wrap: wrap;
 }
 .serviciotext {
   background-color: pink;
+  flex-wrap: wrap;
 }
 .team-card img {
   width: 100%;
@@ -189,7 +213,51 @@ body.equipotext {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
- 
+ flex-wrap: wrap;
+}
+.form-contacto {
+  width: 100%;
+}
+.form-contacto label,
+.form-contacto input,
+.form-contacto textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-contacto label {
+  margin-bottom: 5px;
+  color: var(--color-primario);
+}
+.form-contacto input,
+.form-contacto textarea {
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+}
+.form-contacto input:focus,
+.form-contacto textarea:focus {
+  border-color: pink;
+}
+.boton-enviar {
+  background-color: aqua;
+  color: black;
+  border: 1px solid aqua;
+  padding: 10px;
+  font-size: 1.2em;
+  border-radius: 15px;
+  cursor: pointer;
+  align-self: center;
+  width: auto;
+  transition: background-color 0.3s ease;
+}
+.boton-enviar:hover {
+  background-color: blue;
+  color: black;
+  border: 1px solid blue;
+  animation: rebotar 0.5s ease;
 }
 
 
