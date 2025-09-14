@@ -98,7 +98,12 @@ li a:active {
   align-items: flex-end;
 }
 
-
+.gracias {
+  background-color: pink;
+}
+.gracias h1 {
+  text-align: center;
+}
 
 nav.navbar::after {
   content: "";
@@ -184,8 +189,14 @@ nav.navbar::after {
 .lima {
   background-color: pink;
 }
-h1, p {
-  display: block;
+.torta1 {
+  background-color: pink;
+}
+.torta2 {
+  background-color: pink;
+}
+.torta3 {
+  background-color: pink;
 }
 
 .team-card {
