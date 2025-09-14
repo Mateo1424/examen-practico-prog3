@@ -49,6 +49,7 @@ li {
   padding-bottom: 3px;
   display: inline-block;
   flex-wrap: wrap;
+  align-items: flex-end;
   transition: transform 0.1 ease ;
 }
 li::before
@@ -56,6 +57,7 @@ li::before
   content: "";
   color: aqua;
   flex-wrap: wrap;
+  align-items: flex-end;
 }
 li a::after {
   content: "";
@@ -67,15 +69,18 @@ li a::after {
   background-color: blueviolet;
   transition: width 0.3s ease;
   flex-wrap: wrap;
+  align-items: flex-end;
 }
 li a:hover:after {
 width: 100%;
 flex-wrap: wrap;
+align-items: flex-end;
 }
 li a:active {
   transform: scale(0.9);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5rem);
   flex-wrap: wrap;
+  align-items: flex-end;
 }
 .navbar {
     color: black;
@@ -90,7 +95,9 @@ li a:active {
   padding: 0.9rem 1.2rem;
   position: relative;
   flex-wrap: wrap;
+  align-items: flex-end;
 }
+
 
 
 nav.navbar::after {
@@ -107,6 +114,7 @@ nav.navbar::after {
   );
   flex-wrap: wrap;
 }
+
 .navbar__inner {
   max-width: 1000px;
   margin: 0 auto;
@@ -117,6 +125,7 @@ nav.navbar::after {
   flex-wrap: wrap;
 }
 
+
 .navbar__brand {
   display: flex;
   align-items: center;
@@ -124,6 +133,7 @@ nav.navbar::after {
   position: relative;
   flex-wrap: wrap;
 }
+
 .navbar__brand::before {
   color: black;
   content: "";
@@ -139,6 +149,7 @@ nav.navbar::after {
   flex-wrap: wrap;
 }
 
+
 .navbar__links {
 
   display: flex;
@@ -147,6 +158,7 @@ nav.navbar::after {
   padding: 0;
   flex-wrap: wrap;
 }
+
 .team-container {
   display: flex;
   gap: 20px;
@@ -157,12 +169,30 @@ nav.navbar::after {
  justify-content: center;
  flex-wrap: wrap;
 }
+.river {
+  background-color: pink;
+}
+.pokemon {
+  background-color: pink;
+}
+.brownie {
+  background-color: pink;
+}
+.mini-tartas {
+  background-color: pink;
+}
+.lima {
+  background-color: pink;
+}
+h1, p {
+  display: block;
+}
 
 .team-card {
   flex: 0 0 auto;
   width: 300px;
   padding: 15px;
-  height: 350px;
+  height: auto;
   background: white;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
