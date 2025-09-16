@@ -238,6 +238,21 @@ nav.navbar::after {
 footer{
   background-color: pink;
 }
+.footerstich {
+  text-align: center;
+}
+.footerriver {
+  text-align: center;
+}
+.footerpokemon {
+  text-align: center;
+}
+.footerbrownie {
+  text-align: center;
+}
+.footermini {
+  text-align: center;
+}
 .footerequipo{
   background-color: pink;
   text-align: center;
