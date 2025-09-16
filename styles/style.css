@@ -8,7 +8,10 @@ p{
   text-align: center;
   flex-wrap: wrap;
 }
-
+html body {
+  height: 100%;
+  margin: 0;
+}
 .contactotext {
   background-color: pink;
   flex-wrap: wrap;
@@ -37,8 +40,6 @@ main {
   flex-wrap: wrap;
   gap: 20px;
   padding: 40px;
-  flex-wrap: wrap;
-
 }
 li {
   color: rgb(175, 175, 60);
@@ -119,7 +120,18 @@ nav.navbar::after {
   );
   flex-wrap: wrap;
 }
-
+.navbar__logo {
+  height: 40px;
+  width: auto;
+}
+.navbar__logo1 {
+  height: 40px;
+  width: auto;
+}
+.navbar__title {
+  font-size: 1.5rem;
+  margin: 0;
+}
 .navbar__inner {
   max-width: 1000px;
   margin: 0 auto;
@@ -146,11 +158,6 @@ nav.navbar::after {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: radial-gradient(
-    circle at 30% 30%,
-    rgba(255, 255, 255, 0.25)
-  );
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25) inset;
   flex-wrap: wrap;
 }
 
@@ -228,14 +235,25 @@ nav.navbar::after {
   box-shadow: 0 10px 20px rgba(0,0,0,0.25);
   flex-wrap: wrap;
 }
-footer {
+footer{
   background-color: pink;
-  padding: 130px;
-  text-align: start;
-  flex-wrap: wrap;
-  
 }
-
+.footerequipo{
+  background-color: pink;
+  text-align: center;
+}
+.footerservicios{
+  background-color: pink;
+  text-align: center;
+}
+.footercontactos{
+  background-color: pink;
+  text-align: center;
+}
+.footergracias{
+  background-color: pink;
+  text-align: center;
+}
 
 body.equipotext {
   background-color: pink ;
