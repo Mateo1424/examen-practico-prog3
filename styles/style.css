@@ -1,10 +1,14 @@
+:root {
+  --color-primario: pink;
+  --color-secundario: rgb(175, 175, 60);
+}
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   flex-wrap: wrap;
 }
-p{
+p {
   text-align: center;
   flex-wrap: wrap;
 }
@@ -13,7 +17,7 @@ html body {
   margin: 0;
 }
 .contactotext {
-  background-color: pink;
+  background-color: var(--color-primario);
   flex-wrap: wrap;
 }
 body.inicio {
@@ -24,6 +28,7 @@ body.inicio {
   flex-wrap: wrap;
 }
 body {
+  height: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -32,8 +37,8 @@ body {
 main {
   text-align: center;
   flex: 1;
-  background-color: pink;
-  border: solid 1px pink;
+  background-color: var(--color-primario);
+  border: solid 1px var(--color-primario);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +47,7 @@ main {
   padding: 40px;
 }
 li {
-  color: rgb(175, 175, 60);
+  color: var(--color-secundario);
   text-decoration: none;
   font-size: 1.2rem;
   margin: 0 15px;
@@ -51,10 +56,9 @@ li {
   display: inline-block;
   flex-wrap: wrap;
   align-items: flex-end;
-  transition: transform 0.1 ease ;
+  transition: transform 0.1 ease;
 }
-li::before
-{
+li::before {
   content: "";
   color: aqua;
   flex-wrap: wrap;
@@ -73,9 +77,9 @@ li a::after {
   align-items: flex-end;
 }
 li a:hover:after {
-width: 100%;
-flex-wrap: wrap;
-align-items: flex-end;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-end;
 }
 li a:active {
   transform: scale(0.9);
@@ -84,15 +88,15 @@ li a:active {
   align-items: flex-end;
 }
 .navbar {
-    color: black;
-    box-sizing: border-box;
-    flex-flow: row;
-    padding: 70px;
-    margin: 50px;
-    margin: 0;
+  color: black;
+  box-sizing: border-box;
+  flex-flow: row;
+  padding: 70px;
+  margin: 50px;
+  margin: 0;
   width: 100%;
   box-sizing: border-box;
-  background-color: rgb(175, 175, 60);
+  background-color: var(--color-secundario);
   padding: 0.9rem 1.2rem;
   position: relative;
   flex-wrap: wrap;
@@ -100,7 +104,7 @@ li a:active {
 }
 
 .gracias {
-  background-color: pink;
+  background-color: var(--color-primario);
 }
 .gracias h1 {
   text-align: center;
@@ -142,7 +146,6 @@ nav.navbar::after {
   flex-wrap: wrap;
 }
 
-
 .navbar__brand {
   display: flex;
   align-items: center;
@@ -161,9 +164,7 @@ nav.navbar::after {
   flex-wrap: wrap;
 }
 
-
 .navbar__links {
-
   display: flex;
   gap: 1rem;
   margin: 0;
@@ -176,34 +177,34 @@ nav.navbar::after {
   gap: 20px;
   overflow-x: auto;
   padding: 10px;
- align-items: center;
- flex-wrap: wrap; 
- justify-content: center;
- flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .river {
-  background-color: pink;
+  background-color: var(--color-primario);
 }
 .pokemon {
-  background-color: pink;
+  background-color: var(--color-primario);
 }
 .brownie {
-  background-color: pink;
+  background-color: var(--color-primario);
 }
 .mini-tartas {
-  background-color: pink;
+  background-color: var(--color-primario);
 }
 .lima {
-  background-color: pink;
+  background-color: var(--color-primario);
 }
 .torta1 {
-  background-color: pink;
+  background-color: var(--color-primario);
 }
 .torta2 {
-  background-color: pink;
+  background-color: var(--color-primario);
 }
 .torta3 {
-  background-color: pink;
+  background-color: var(--color-primario);
 }
 
 .team-card {
@@ -213,7 +214,7 @@ nav.navbar::after {
   height: auto;
   background: white;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
   overflow: hidden;
@@ -232,11 +233,11 @@ nav.navbar::after {
 }
 .team-card:hover {
   transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
   flex-wrap: wrap;
 }
-footer{
-  background-color: pink;
+footer {
+  background-color: var(--color-secundario);
 }
 .footerstich {
   text-align: center;
@@ -253,29 +254,29 @@ footer{
 .footermini {
   text-align: center;
 }
-.footerequipo{
-  background-color: pink;
+.footerequipo {
+  background-color: var(--color-secundario);
   text-align: center;
 }
-.footerservicios{
-  background-color: pink;
+.footerservicios {
+  background-color: var(--color-secundario);
   text-align: center;
 }
-.footercontactos{
-  background-color: pink;
+.footercontactos {
+  background-color: var(--color-secundario);
   text-align: center;
 }
-.footergracias{
-  background-color: pink;
+.footergracias {
+  background-color: var(--color-secundario);
   text-align: center;
 }
 
 body.equipotext {
-  background-color: pink ;
+  background-color: var(--color-secundario);
   flex-wrap: wrap;
 }
 .serviciotext {
-  background-color: pink;
+  background-color: var(--color-secundario);
   flex-wrap: wrap;
 }
 .team-card img {
@@ -287,7 +288,7 @@ body.equipotext {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
- flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .form-contacto {
   width: 100%;
@@ -313,7 +314,7 @@ body.equipotext {
 }
 .form-contacto input:focus,
 .form-contacto textarea:focus {
-  border-color: pink;
+  border-color: var(--color-primario);
 }
 .boton-enviar {
   background-color: aqua;
@@ -333,5 +334,6 @@ body.equipotext {
   border: 1px solid blue;
   animation: rebotar 0.5s ease;
 }
-
-
+a {
+  color: blueviolet;
+}
