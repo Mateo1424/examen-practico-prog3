@@ -32,6 +32,8 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 main {
@@ -176,7 +178,7 @@ nav.navbar::after {
   display: flex;
   gap: 20px;
   overflow-x: auto;
-  padding: 10px;
+  padding: 50px;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
@@ -238,37 +240,48 @@ nav.navbar::after {
 }
 footer {
   background-color: var(--color-secundario);
+  margin-top: auto;
+  text-align: center;
 }
 .footerstich {
   text-align: center;
+  margin-top: auto;
 }
 .footerriver {
   text-align: center;
+  margin-top: auto;
 }
 .footerpokemon {
   text-align: center;
+  margin-top: auto;
 }
 .footerbrownie {
   text-align: center;
+  margin-top: auto;
 }
 .footermini {
   text-align: center;
+  margin-top: auto;
 }
 .footerequipo {
   background-color: var(--color-secundario);
   text-align: center;
+  margin-top: auto;
 }
 .footerservicios {
   background-color: var(--color-secundario);
   text-align: center;
+  margin-top: auto;
 }
 .footercontactos {
   background-color: var(--color-secundario);
   text-align: center;
+  margin-top: auto;
 }
 .footergracias {
   background-color: var(--color-secundario);
   text-align: center;
+  margin-top: auto;
 }
 
 body.equipotext {
